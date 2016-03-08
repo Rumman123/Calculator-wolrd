@@ -19,7 +19,7 @@ angular
   ])
   .config(function ($stateProvider,$urlRouterProvider,$locationProvider) {
 
-    $urlRouterProvider.otherwise("/landing");
+    $urlRouterProvider.otherwise('/landing');
     $stateProvider
       .state('landing', {
         url:'/landing',
@@ -39,5 +39,5 @@ angular
         controller: 'CalcCtrl',
         controllerAs: 'calc'
       });
-    $locationProvider.html5Mode(true);
+   /* $locationProvider.html5Mode(true);*/
   });

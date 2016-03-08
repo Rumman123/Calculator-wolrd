@@ -88,4 +88,13 @@ body{
   text-align: center;
   padding: 20px;
 }
+#calc-list li a {
+  cursor:pointer;
+}
+#calc-list li a span {
+  display: block;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
 /*end calc list page css*/

@@ -8,10 +8,8 @@
  * Controller of the calculatorApp
  */
 angular.module('calculatorApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl',function (CalculatorListService) {
+     var vm=this;
+    vm.CalculatorThings=CalculatorListService.list;
   });
+
