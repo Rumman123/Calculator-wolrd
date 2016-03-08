@@ -38,5 +38,6 @@ angular
         templateUrl: 'views/calculator-detail.html',
         controller: 'CalcCtrl',
         controllerAs: 'calc'
-      })
+      });
+    $locationProvider.html5Mode(true);
   });
