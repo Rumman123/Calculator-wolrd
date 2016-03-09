@@ -15,8 +15,7 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch',
-    'angularRangeSlider'
+    'ngTouch'
   ])
   .config(function ($stateProvider,$urlRouterProvider,$locationProvider) {
 
