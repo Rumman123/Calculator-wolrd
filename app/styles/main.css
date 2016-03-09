@@ -1,7 +1,8 @@
 
-body{
-  margin:0;
-  padding:0;
+body {
+  margin: 0;
+  padding: 0;
+  background: #F1F0F0;
 }
 #wrapper {
   width: 100%;
@@ -78,6 +79,10 @@ body{
 }
 
 /*start calc list page css*/
+.container {
+  width: 1050px;
+  margin: auto;
+}
 #calc-list{
   text-align:center;
 }
@@ -98,3 +103,88 @@ body{
   font-weight: bold;
 }
 /*end calc list page css*/
+
+/*start detail page css*/
+#heading {
+  background: #DE2664;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+#calc-section {
+  padding: 20px 0;
+}
+.calc-ul li {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #044AA2;
+}
+.calc-ul li:last-child{
+ text-align: center;
+  margin:30px 0;
+}
+
+.calc-ul li .label {
+  width: 20%;
+  display: inline-block;
+  position:relative;
+}
+.calc-ul li .rupee:after {
+  font-family: FontAwesome;
+  content: "\f156";
+  position: absolute;
+  right: 4px;
+  top:10px;
+}
+.calc-ul li .percentage:after {
+  font-family: FontAwesome;
+  content:  "\f295";
+  position: absolute;
+  right: 0px;
+  top:10px;
+}
+.calc-ul li .slide-bar {
+  width: 58%;
+  display: inline-block;
+  position:relative;
+}
+.calc-ul li strong {
+  font-size: 12px;
+  margin: 0 8px;
+}
+.calc-ul li span input {
+  border: 1px solid #ee4509;
+  background: none repeat scroll 0% 0% #edeceb;
+  box-shadow: 1px 1px 4px rgb(244, 244, 244) inset;
+  font-size: 13px;
+  padding: 8px;
+  color: #666666;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.calc-ul .emi-text {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+  padding: 0 20px;
+}
+.calc-ul li .emi-value {
+  text-align: left;
+  color: #DE2664;
+  font-size: 50px;
+  vertical-align: middle;
+  width: 50%;
+}
+.calc-ul li .emi-value i {
+  margin: 0 10px;
+  font-size: 40px;
+}
+/*end detail page css*/

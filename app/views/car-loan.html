@@ -1,0 +1,28 @@
+
+<section id="heading">
+  <div class="container">
+<h2>Car Loan Emi Calculator</h2></div>
+</section>
+<section id="calc-section">
+ <div class="container">
+<ul class="calc-ul">
+  <li>
+    <span class="label amount">
+      Loan Amount
+    </span>
+    <span class="slide-input rupee">
+      <input type="text" ng-model="car.calcData.principal"  value=0>
+    </span>
+    <div class="slide-bar">
+
+  </div></li>
+  <li><span class="label">Rate of Interest<strong>(Max 100%)</strong></strong></span><span class="slide-input percentage"><input type="text" ng-model="car.calcData.rate" value=0></span><div class="slide-bar">
+    <div class="slider"></div>
+  </div></li>
+  <li><span class="label">Select Period <strong>(In years)</strong></span><span class="slide-input"><input type="text" ng-model="car.calcData.time"  value=0></span><div class="slide-bar"></div></li>
+  <li><span class="emi-text">Your Monthly Instalments</span><span class="emi-value"><i class="fa fa-rupee"></i>{{car.monthlyPayment()}}</span></li>
+</ul>
+ </div>
+</section>
+
+
