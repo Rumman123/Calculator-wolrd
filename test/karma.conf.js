@@ -32,6 +32,12 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/jquery-ui/jquery-ui.js',
       'bower_components/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.js',
+      'bower_components/angular-aria/angular-aria.js',
+      'bower_components/angular-messages/angular-messages.js',
+      'bower_components/angular-material/angular-material.js',
+      'bower_components/highcharts/highcharts.js',
+      'bower_components/highcharts/highcharts-more.js',
+      'bower_components/highcharts/modules/exporting.js',
       // endbower
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
