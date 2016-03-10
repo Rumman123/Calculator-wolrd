@@ -11,25 +11,28 @@
       Loan Amount
     </span>
     <span class="slide-input rupee">
-      <input type="text" ng-model="car.amountConfig.value"  value=0>
+      <input type="text" ng-model="car.calcData.amount.value"  value=0>
     </span>
     <div class="slide-bar">
-      <div slider config="car.amountConfig"  model="car.amountConfig.value" slider-data="{{car.amountConfig.value}}"></div>
+      <div slider config="car.amountConfig"  model="car.calcData.amount.value" slider-data="{{car.calcData.amount.value}}"></div>
      </div></li>
   <li><span class="label">Rate of Interest<strong>(Max 100%)</strong></strong></span>
     <span class="slide-input percentage">
-      <input type="text" ng-model="car.rateConfig.value" value=0></span><div class="slide-bar">
-    <div slider config="car.rateConfig"  model="car.rateConfig.value" slider-data="{{car.rateConfig.value}}"></div>
+      <input type="text" ng-model="car.calcData.rate.value" value=0></span><div class="slide-bar">
+    <div slider config="car.rateConfig"  model="car.calcData.rate.value" slider-data="{{car.calcData.rate.value}}"></div>
   </div></li>
   <li><span class="label">Select Period <strong>(In years)</strong></span>
     <span class="slide-input">
-      <input type="text" ng-model="car.timeConfig.value"  value=0></span>
+      <input type="text" ng-model="car.calcData.time.value"  value=0></span>
     <div class="slide-bar">
-      <div slider config="car.timeConfig"  model="car.timeConfig.value" slider-data="{{car.timeConfig.value}}"></div>
+      <div slider config="car.timeConfig"  model="car.calcData.time.value" slider-data="{{car.calcData.time.value}}"></div>
     </div></li>
   <li><span class="emi-text">Your Monthly Instalments</span><span class="emi-value"><i class="fa fa-rupee"></i>{{car.monthlyPayment()}}</span></li>
 </ul>
  </div>
+</section>
+<section id="pie-section">
+  <piechart title="Browser usage" data="car.pieData" pie-data="{{car.pieData}}">Placeholder for pie chart</piechart>
 </section>
 
 

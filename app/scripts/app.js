@@ -15,8 +15,7 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch',
-    'ngMaterial'
+    'ngTouch'
   ])
   .config(function ($stateProvider,$urlRouterProvider,$locationProvider) {
 
@@ -59,36 +58,4 @@ angular
         controllerAs: 'property'
       })
    /* $locationProvider.html5Mode(true);*/
-  }).directive("slider", function() {
-
-    return {
-
-      restrict: 'A',
-      scope: {
-        sliderConfig: "=config",
-        value: "=model"
-      },
-
-      link: function(scope, elem, attrs) {
-
-        $(elem).slider({
-          min: scope.sliderConfig.min,
-          max: scope.sliderConfig.max,
-          step: scope.sliderConfig.step,
-          range: "min",
-          value: scope.value,
-          slide: function( event, ui ) {
-            scope.value = ui.value;
-            scope.$apply();
-
-          }
-
-        })
-        attrs.$observe('sliderData', function(data){
-          $( elem ).slider( "value", arguments[0]).slider("float");
-        });
-      }
-
-    }
-
   });
