@@ -18,21 +18,36 @@
      </div></li>
   <li><span class="label">Rate of Interest<strong>(Max 100%)</strong></strong></span>
     <span class="slide-input percentage">
-      <input type="text" ng-model="car.calcData.rate.value" value=0></span><div class="slide-bar">
+      <input type="text" name="rate" ng-model="car.calcData.rate.value" value=0 ng-minlength="1" ng-maxlength="100" required>
+        <p ng-show="rate.$invalid">Enter valid rate</p></span>
+
+    <div class="slide-bar">
     <div slider config="car.rateConfig"  model="car.calcData.rate.value" slider-data="{{car.calcData.rate.value}}"></div>
   </div></li>
   <li><span class="label">Select Period <strong>(In years)</strong></span>
-    <span class="slide-input">
-      <input type="text" ng-model="car.calcData.time.value"  value=0></span>
+    <span class="slide-input year">
+      <input type="text" name="time" ng-model="car.calcData.time.value"  value=0 ng-minlength="1" ng-maxlength="50" required>
+    <p ng-show="time.$invalid">Enter valid term</p></span>
     <div class="slide-bar">
       <div slider config="car.timeConfig"  model="car.calcData.time.value" slider-data="{{car.calcData.time.value}}"></div>
     </div></li>
-  <li><span class="emi-text">Your Monthly Instalments</span><span class="emi-value"><i class="fa fa-rupee"></i>{{car.monthlyPayment()}}</span></li>
+
 </ul>
  </div>
 </section>
-<section id="pie-section">
-  <piechart title="Browser usage" data="car.pieData" pie-data="{{car.pieData}}">Placeholder for pie chart</piechart>
+<section id="bottom-section">
+  <div class="container">
+  <div class="values-div">
+    <span class="emi-text">Loan EMI</span><span class="emi-value"><i class="fa fa-rupee"></i>{{car.monthlyPayment()}}</span>
+   <span class="emi-text">Total Interest Payable</span><span class="emi-value"><i class="fa fa-rupee"></i>{{car.interestPayment()}}</span>
+    <span class="emi-text">Total Payment
+(Principal + Interest)</span><span class="emi-value"><i class="fa fa-rupee"></i>{{car.totalPayment()}}</span>
+
+  </div>
+  <div class="pie-div">
+    <piechart title="Browser usage" data="car.pieData" pie-data="{{car.pieData}}">Placeholder for pie chart</piechart>
+  </div>
+  </div>
 </section>
 
 

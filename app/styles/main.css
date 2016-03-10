@@ -2,7 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #F1F0F0;
+}
+.view {
+  width: 100%;
+  float: left;
+  height:100%;
 }
 #wrapper {
   width: 100%;
@@ -145,6 +149,13 @@ body {
   right: 0px;
   top:10px;
 }
+.calc-ul li .year:after {
+  content:  "yr";
+  position: absolute;
+  right: 0px;
+  top:10px;
+  font-weight: 700;
+}
 .calc-ul li .slide-bar {
   width: 57%;
   display: inline-block;
@@ -168,27 +179,31 @@ body {
   font-weight: bold;
   border-radius: 4px;
 }
-.calc-ul .emi-text {
-  font-size: 25px;
+.values-div .emi-text {
+  font-size: 16px;
   text-transform: capitalize;
   font-weight: bold;
   display: inline-block;
   white-space: nowrap;
   vertical-align: middle;
-  width: 50%;
-  text-align: right;
-  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+  padding:20px;
+  border: 1px solid #434D5A;
 }
-.calc-ul li .emi-value {
-  text-align: left;
+.values-div .emi-value {
+  text-align: center;
   color: #434D5A;
-  font-size: 50px;
+  font-size: 30px;
   vertical-align: middle;
-  width: 50%;
+  width: 100%;
+  display: block;
+  padding:20px;
+  border: 1px solid #434D5A;
 }
-.calc-ul li .emi-value i {
+.values-div .emi-value i {
   margin: 0 10px;
-  font-size: 40px;
+  font-size: 25px;
 }
 .ui-corner-all, .ui-corner-bottom, .ui-corner-br, .ui-corner-right {
   border-bottom-right-radius: 2px;
@@ -261,5 +276,17 @@ body {
 }
 .ui-slider-float .ui-slider-tip:after, .ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
   border-top-color: #434D5A;
+}
+#bottom-section{
+  width:100%;
+  float:left;
+}
+#bottom-section .values-div {
+  width: 50%;
+  float: left;
+}
+#bottom-section .pie-div {
+  width: 50%;
+  float: left;
 }
 /*end detail page css*/

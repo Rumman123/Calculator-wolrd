@@ -24,7 +24,6 @@ angular
           slide: function( event, ui ) {
             scope.value = ui.value;
             scope.$apply();
-
           }
         })
         attrs.$observe('sliderData', function(data){
