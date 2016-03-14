@@ -1,7 +1,10 @@
 <div class="container">
   <ul id="calc-list">
     <li ng-repeat="calc in main.CalculatorThings">
-      <a ui-sref="{{calc.href}}"><img src="{{calc.imgSrc}}" alt="{{calc.alt}}"><span>{{calc.name}}</span></a>
+      <a ui-sref="{{calc.href}}"><img src="{{calc.imgSrc}}" alt="{{calc.alt}}">
+        <span class="calc-type">{{calc.type}}</span>
+        <span>{{calc.name}}</span>
+      <span class="calculate-emi">Calculate its EMI</span></a>
     </li>
   </ul>
 </div>

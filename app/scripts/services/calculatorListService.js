@@ -4,10 +4,10 @@
 'use strict';
 angular.module('calculatorApp').factory('CalculatorListService',function(){
   var Calculator={};
-  Calculator.list=[{href:"carLoan",imgSrc:"images/carloan_cl.png",alt:"carloan_cl",name:"Car Loan"},
-    {href:"homeLoan",imgSrc:"images/homeloan_cl.png",alt:"carloan_cl",name:"Home Loan"},
-    {href:"personalLoan",imgSrc:"images/personalloan_cl.png",alt:"carloan_cl",name:"Personal Loan"},
-    {href:"propertyLoan",imgSrc:"images/recurring_cl.png",alt:"carloan_cl",name:"Recurring Loan"}
+  Calculator.list=[{href:"carLoan",imgSrc:"images/rimac.jpg",alt:"carloan_cl",name:"The Rimac Concept_One is the world’s fastest electric car",type:"Car Loan"},
+    {href:"homeLoan",imgSrc:"images/home.jpg",alt:"homeloan_cl",name:"If you've got a spare few million lying around,Incredible places ...",type:"Home Loan"},
+    {href:"personalLoan",imgSrc:"images/personal.jpg",alt:"personalloan_cl",name:"Whatever you want is lying behind you just grab it...",type:"Personal Loan"},
+    {href:"propertyLoan",imgSrc:"images/business.jpg",alt:"carloan_cl",name:"Designed a package of loans to best suit  business requirements.  ...",type:"Business Loan"}
   ];
   return Calculator;
 });

@@ -10,7 +10,7 @@ angular
         title: '@',
         data: '=data'
       },
-      link: function (scope, element,attrs) {
+      link: function (scope, element) {
         var chart;
         var dataPro =  {
           chart: {
@@ -34,11 +34,6 @@ angular
             data: scope.data
           }]
         };
-        //scope.$watch('scope.data[0].y', function(newValue, oldValue){
-        //  console.log(scope.data[0].y);
-        //  //car.pieData[0].y = car.calcData.amount.value;
-        //});
-
         scope.$watch('data[0].y+data[1].y', function(newValue, oldValue){
           chart = new Highcharts.Chart(dataPro);
         });

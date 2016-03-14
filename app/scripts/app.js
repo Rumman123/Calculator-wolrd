@@ -53,7 +53,7 @@ angular
       })
       .state('propertyLoan', {
         url:'/propertyLoan',
-        templateUrl: 'views/property-loan.html',
+        templateUrl: '../views/business-loan.html',
         controller: 'propertyCtrl',
         controllerAs: 'property'
       })

@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.tmp/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/personal.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/directives/piechart.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/services/calculatorListService.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/business-loan.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/car-loan.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/home-loan.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/landing.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/personal-loan.html" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,53 @@
+
+<section id="heading">
+  <div class="container">
+    <h2>Business Loan Emi Calculator</h2></div>
+</section>
+<section id="calc-section">
+  <div class="container">
+    <ul class="calc-ul">
+      <li>
+    <span class="label amount">
+      Loan Amount
+    </span>
+    <span class="slide-input rupee">
+      <input type="text" ng-model="property.calcData.amount.value"  value=0>
+    </span>
+        <div class="slide-bar">
+          <div slider config="property.amountConfig"  model="property.calcData.amount.value" slider-data="{{property.calcData.amount.value}}"></div>
+        </div></li>
+      <li><span class="label">Rate of Interest<strong>(Max 100%)</strong></strong></span>
+    <span class="slide-input percentage">
+      <input type="text" name="rate" ng-model="property.calcData.rate.value" value=0 ng-minlength="1" ng-maxlength="100" required>
+        <p ng-show="rate.$invalid">Enter valid rate</p></span>
+
+        <div class="slide-bar">
+          <div slider config="property.rateConfig"  model="property.calcData.rate.value" slider-data="{{property.calcData.rate.value}}"></div>
+        </div></li>
+      <li><span class="label">Select Period <strong>(In years)</strong></span>
+    <span class="slide-input year">
+      <input type="text" name="time" ng-model="property.calcData.time.value"  value=0 ng-minlength="1" ng-maxlength="50" required>
+    <p ng-show="time.$invalid">Enter valid term</p></span>
+        <div class="slide-bar">
+          <div slider config="property.timeConfig"  model="property.calcData.time.value" slider-data="{{property.calcData.time.value}}"></div>
+        </div></li>
+
+    </ul>
+  </div>
+</section>
+<section id="bottom-section">
+  <div class="container">
+    <div class="values-div">
+      <span class="emi-text">Loan EMI</span><span class="emi-value"><i class="fa fa-rupee"></i>{{property.monthlyPayment()}}</span>
+      <span class="emi-text">Total Interest Payable</span><span class="emi-value"><i class="fa fa-rupee"></i>{{property.interestPayment()}}</span>
+    <span class="emi-text">Total Payment
+(Principal + Interest)</span><span class="emi-value"><i class="fa fa-rupee"></i>{{property.totalPayment()}}</span>
+
+    </div>
+    <div class="pie-div">
+      <piechart title="Browser usage" data="property.pieData" pie-data="{{property.pieData}}">Placeholder for pie chart</piechart>
+    </div>
+  </div>
+</section>
+
+
